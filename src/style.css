@@ -29,12 +29,24 @@ body {
   aspect-ratio: 1 / 1;
 }
 
+.grid-gallery img {
+  height: 350px;
+  width: 350px;
+  border-radius: 4px;
+}
+
 .grid-main {
   grid-template-columns: auto auto;
 }
 
 .grid-cafes {
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-gallery {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  grid-column-gap: 0;
 }
 
 .grid-footer {
@@ -84,7 +96,8 @@ section {
   padding: 100px;
 }
 
-section.section-2 {
+section.section-2,
+.section-3 {
   background: #f8f8f8;
 }
 
@@ -182,6 +195,10 @@ main p {
   line-height: 24px;
   color: #272044;
   opacity: 0.7;
+}
+
+.picture-gallery {
+  margin-left: 40px;
 }
 
 footer {
