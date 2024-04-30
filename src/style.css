@@ -17,15 +17,13 @@ body {
   grid-gap: 64px;
 }
 
-.friends {
+.friends.img-responsive {
   filter: brightness(80%) saturate(65%);
-  width: 100%;
-  aspect-ratio: 1 / 1;
 }
 
 .image-responsive {
-  width: 100%;
   display: block;
+  width: 100%;
   aspect-ratio: 1 / 1;
 }
 
@@ -33,6 +31,7 @@ body {
   height: 350px;
   width: 350px;
   border-radius: 4px;
+  max-width: 100%;
 }
 
 .grid-main {
@@ -66,6 +65,7 @@ body {
 .card-header.grid {
   grid-gap: 0;
   grid-template-columns: auto auto;
+  justify-content: center;
 }
 
 .card-body {
@@ -282,5 +282,25 @@ footer a {
 
   .embed {
     width: 100%;
+  }
+
+  .picture-gallery {
+    margin-left: 0;
+  }
+
+  .grid-gallery img {
+    width: 100%;
+  }
+
+  .friends.img-responsive {
+    width: 60%;
+    grid-gap: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-3 {
+    display: none;
   }
 }
